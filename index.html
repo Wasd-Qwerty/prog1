@@ -7,12 +7,12 @@
         var x = Number(document.forms["frm"].elements["x"].value); 
         if(Math.abs(x)<Infinity){
             for(var n = 0; n <= N; n++){
-                let fuckN = 1;
-                if(n == 0) fuckN = 1;
+                let fac = 1;
+                if(n == 0) facN = 1;
                 for(var i = 1; i <= n; i++){
-                    fuckN *= i;
+                    facN *= i;
                 }
-                sum += ((-1)**n*(x**n))/fuckN;
+                sum += ((-1)**n*(x**n))/facN;
             }
             document.write(sum);
         } else{
